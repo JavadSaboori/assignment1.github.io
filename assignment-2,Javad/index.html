@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="script/script.js"></script>
+   
+
+
+   <p id="p"></p>
+
+
+<script>
+    function gentext(){
+        
+        var word=['norrköping', 'Skåne', 'Ludvika', 'Karlstad', 'Kalmar', 'stömstad', 'stpckholm']
+    var Para= document.getElementById('p'); 
+    Para.innerHTML=word[Math.floor(Math.random()*word.length)];
+    }
+</script>
+
+<button onclick='gentext();'> generate text</button>
+
+
+<div>
+<p id="demo"></p>
+
+<script> 
+
+let language = "Norrköping Skåne Ludvika karlstad  Kalmar strömstad  stockholm";
+
+let text = "";
+for (let x of language) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</div>
+</head>
+<body>
+    
+</body>
+</html>
